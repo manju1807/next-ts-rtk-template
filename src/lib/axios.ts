@@ -18,16 +18,16 @@ axiosInstance.interceptors.request.use(
   },
   (error) => {
     return Promise.reject(error);
-  }
+  },
 );
 
 axiosInstance.interceptors.response.use(
   (response) => response,
   (error) => {
     // Handle errors here
-    console.log('Axios error', error)
+    console.log('Axios error', error);
     return Promise.reject(error);
-  }
+  },
 );
 
 export default axiosInstance;

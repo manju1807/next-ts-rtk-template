@@ -9,11 +9,23 @@ export default function Counter() {
   const dispatch = useDispatch();
 
   return (
-    <div className='text-center flex flex-col space-y-6'>
+    <div className="text-center flex flex-col space-y-6">
       <h1>Counter: {count}</h1>
-      <div className='flex flex-row gap-4'>
-        <Button variant={'default'} className='px-2 py-1' onClick={() => dispatch(increment())}>Increment</Button>
-        <Button variant={'default'} className='px-2 py-1' onClick={() => dispatch(decrement())}>Decrement</Button>
+      <div className="flex flex-row gap-4">
+        <Button
+          variant={'default'}
+          className="px-2 py-1"
+          onClick={() => dispatch(increment())}
+        >
+          Increment
+        </Button>
+        <Button
+          variant={'default'}
+          className="px-2 py-1"
+          onClick={() => dispatch(decrement())}
+        >
+          Decrement
+        </Button>
       </div>
     </div>
   );

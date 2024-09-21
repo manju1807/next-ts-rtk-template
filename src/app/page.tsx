@@ -1,5 +1,5 @@
-import Counter from "@/components/counter";
-import { ModeToggle } from "@/components/theme-toggle";
+import Counter from '@/components/counter';
+import { ModeToggle } from '@/components/theme-toggle';
 
 export default function Home() {
   return (

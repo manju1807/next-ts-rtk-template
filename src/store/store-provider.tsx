@@ -4,11 +4,7 @@ import { useRef } from 'react';
 import { Provider } from 'react-redux';
 import { makeStore, AppStore } from '@/store/index';
 
-export default function StoreProvider({
-  children
-}: {
-  children: React.ReactNode
-}) {
+export default function StoreProvider({ children }: { children: React.ReactNode }) {
   // useRef is used to keep a reference to the Redux store
   // The storeRef.current will persist the store instance across renders
   const storeRef = useRef<AppStore>();
